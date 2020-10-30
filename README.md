@@ -1,5 +1,5 @@
 # Hacktoberfest
-Hacktober fest is a celebration open to everyone in the global community. It is held from October 1st to October 31st worldwide. It is a great oppurtunity/platform for people from beginner stage to professional developer to learn more about open source and contribute effectively for the same.IT is a month-long celebration of open source software run by DigitalOcean in partnership with GitHub and Twilio.
+Hacktober fest is a celebration open to everyone in the global community. It is held from October 1st to October 31st worldwide. It is a great oppurtunity/platform for people from beginner stage to professional developer to learn more about open source and contribute effectively for the same. It is a month-long celebration of open source software run by DigitalOcean in partnership with GitHub and Twilio.
 
  
 ## Instructions:
@@ -13,14 +13,12 @@ Click on "Start Hacking" and sign in with your GitHub account.
 ![Screenshot-HFST](https://images.prismic.io/www-static/e6c04b47-bd9d-474a-9d25-ab143f47349e_Hacktoberfest2020.png?auto=compress,format)
 
 
-
 ### 2. Star and Fork this Repository
 ###### You can star and fork this repository on GitHub by navigating at the top of this repository.
 
 GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the Hacktoberfest repository, so the GitHub URL for this project is:
 
 https://github.com/wir-coders/Hacktoberfest
-
 
 ![screenshot-star](https://github.com/wir-coders/Hacktoberfest/blob/master/star.png)
 
@@ -39,9 +37,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 You can alternatively copy the URL by using the green “Clone or download” button from your repository page that you just forked from the original repository page. Once you click the button, you’ll be able to copy the URL by clicking the binder button next to the URL:
 
-
 ![screenshot 73](https://github.com/wir-coders/Hacktoberfest/blob/master/lp.png)
-
 
 Once we have the URL, we’re ready to clone the repository. To do this, we’ll combine the git clone command with the repository URL from the command line in a terminal window:
 
@@ -51,7 +47,7 @@ Once we have the URL, we’re ready to clone the repository. To do this, we’ll
 
 To create your branch, from your terminal window, change your directory so that you are working in the directory of the repository. Be sure to use the actual name of the repository (i.e. Hacktoberfest) to switch into that directory.
 
-#####    `cd Hacktoberfest`
+##### `cd Hacktoberfest`
 
 Now, we’ll create our new branch with the git branch command. Make sure you name it descriptively so that others working on the project understand what you are working on.
 
@@ -61,7 +57,7 @@ Now, we’ll create our new branch with the git branch command. Make sure you na
 
 Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
 
-##### ` git checkout new-branch `
+##### `git checkout new-branch`
 
 Once you enter the git `checkout` command, you will receive the following output:
 
@@ -76,29 +72,27 @@ At this point, you can now modify existing files or add new files to the project
 
 Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
 
-##### ` git add -A ` or ` git add . `
+##### `git add -A ` or ` git add .`
 
 ![screenshot 155](https://user-images.githubusercontent.com/37223446/47253493-417e7680-d471-11e8-83cf-a4f969da5131.png)
-
 
 Next, we’ll want to record the changes that we made to the repository with the git commit command.
 
 *The commit message is an important aspect of your code contribution; it helps the other contributors fully understand the change you have made, why you made it, and how significant it is. Additionally, commit messages provide a historical record of the changes for the project at large, helping future contributors along the way.*
 
-
 ![screenshot 155](https://user-images.githubusercontent.com/37223446/47235390-87e2bf80-d3f6-11e8-81c0-e01b7463d038.png)
 
 If you have a very short message, you can record that with the -m flag and the message in quotes:
 
-###### ` Example: `
-##### ` git commit -m "Updated Readme.md" `
+###### `Example:`
+##### `git commit -m "Updated Readme.md"`
 
 ![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)
 
 
 ###### At this point you can use the git push command to push the changes to the current branch of your forked repository:
-###### ` Example:`
-##### ` git push --set-upstream origin new-branch `
+###### `Example:`
+##### `git push --set-upstream origin new-branch`
 
 ### 5. Update Local Repository
 
@@ -110,8 +104,7 @@ We’ll first go over configuring a remote for the fork, then syncing the fork.
 
 Next up, you’ll have to specify a new remote upstream repository for us to sync with the fork. This will be the original repository that you forked from. you’ll have to do this with the git remote add command.
 
-##### ` git remote add upstream https://github.com/wir-coders/Hacktoberfest.git `
-
+##### `git remote add upstream https://github.com/wir-coders/Hacktoberfest.git`
 
 ![screenshot 74](https://user-images.githubusercontent.com/37223446/47235672-5f0efa00-d3f7-11e8-9e45-1af02d8b969b.png)
 
@@ -122,15 +115,15 @@ In this example, // upstream // is the shortname we have supplied for the remote
 Once you have configured a remote that references the upstream and original repository on GitHub, you are ready to sync your fork of the repository to keep it up-to-date.
 To sync your fork, from the directory of your local repository in a terminal window, you’ll have to use the // git fetch // command to fetch the branches along with their respective commits from the upstream repository. Since you used the shortname “upstream” to refer to the upstream repository, you’ll have to pass that to the command:
 
-##### ` git fetch upstream `
+##### `git fetch upstream`
 
 Switch to the local master branch of our repository:
 
-##### ` git checkout master `
+##### `git checkout master`
 
 Now merge any changes that were made in the original repository’s master branch, that you will access through your local upstream/master branch, with your local master branch:
 
-##### ` git merge upstream/master `
+##### `git merge upstream/master`
 
 ### 8. Create Pull Request
 
